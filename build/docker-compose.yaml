@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  nextjs:
+    image: node:21
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ../nextjs:/home/node/app
+      - ../nextjs/node_modules:/home/node/app/node_modules
+    command: npm run dev
