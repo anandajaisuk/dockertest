@@ -16,4 +16,4 @@ RUN npx prisma generate
 WORKDIR /src
 
 # Set the default command to run when the container starts
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "build"]
