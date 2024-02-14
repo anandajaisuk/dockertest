@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN npm install
+RUN npm ci
 
 WORKDIR /src/src/prisma
 RUN npx prisma generate
